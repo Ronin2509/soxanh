@@ -97,6 +97,11 @@ summary::after { content: "+"; color: var(--accent); font-size: 22px; line-heigh
 details[open] summary::after { content: "–"; }
 details .body { padding: 0 20px 18px; }
 details .body p { margin: 0 0 12px; }
+.faqshot { margin: 4px 0 0; max-width: 420px; }
+.faqshot img { border-radius: 14px; border: 1px solid var(--line); }
+.faqshot.phone { max-width: 260px; }
+.faqshot.phone img { border-radius: 28px; border: 8px solid #0E1213; }
+.faqshot figcaption { font-size: 14px; color: var(--muted); margin-top: 6px; }
 .steps { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 6px; }
 .steps figure { margin: 0; }
 .steps img { border-radius: 14px; border: 1px solid var(--line); }
