@@ -54,6 +54,14 @@ nav a[aria-current] { color: var(--accent); font-weight: 600; }
 .feature ul { margin: 12px 0 0; padding: 0; list-style: none; display: grid; gap: 8px; }
 .feature li { display: flex; gap: 10px; align-items: flex-start; }
 .feature li .i { color: var(--accent); width: 20px; height: 20px; margin-top: 3px; }
+/* Cặp ảnh "màn chia sẻ → app đọc xong": 2 máy cạnh nhau, mũi tên ở giữa, giữ cạnh nhau cả trên điện thoại */
+.feature.pair { grid-template-columns: 1fr 470px; }
+.feature.pair.flip { grid-template-columns: 470px 1fr; }
+.flow { display: grid; grid-template-columns: 1fr 28px 1fr; align-items: start; gap: 6px; }
+.flow figure { margin: 0; min-width: 0; }
+.flow .device img { width: 100%; height: auto; }
+.flow figcaption { font-size: 14px; color: var(--muted); text-align: center; margin-top: 10px; line-height: 1.35; }
+.flow > .i { color: var(--accent); width: 28px; height: 28px; align-self: center; margin-bottom: 40px; }
 .example { display: inline-block; font-weight: 700; background: var(--tint); color: var(--accent); padding: 2px 10px; border-radius: 8px; }
 
 /* Dải riêng tư */
@@ -119,6 +127,9 @@ footer a { color: var(--muted); }
   .hero .inner, .feature, .feature.flip, .plans { grid-template-columns: 1fr; }
   .feature.flip .text { order: 0; }
   .feature .device { max-width: 280px; justify-self: center; }
+  .feature.pair, .feature.pair.flip { grid-template-columns: 1fr; }
+  .flow { max-width: 480px; width: 100%; justify-self: center; }
+  .flow .device { max-width: none; }
   .feature .device img { width: 100%; }
   .grid4 { grid-template-columns: 1fr 1fr; }
   .steps, .summary { grid-template-columns: 1fr; }
