@@ -41,7 +41,7 @@ nav a[aria-current] { color: var(--accent); font-weight: 600; }
 .device { border-radius: 46px; background: #0E1213; padding: 10px; box-shadow: 0 30px 70px rgba(0, 40, 40, .35); }
 .device img { border-radius: 37px; }
 .hero .device { border-bottom-left-radius: 0; border-bottom-right-radius: 0; padding-bottom: 0; }
-.hero .device img { border-bottom-left-radius: 0; border-bottom-right-radius: 0; height: 520px; object-fit: cover; object-position: top; }
+.hero .device img { border-bottom-left-radius: 0; border-bottom-right-radius: 0; width: 100%; height: 520px; object-fit: cover; object-position: top; }
 
 /* Khối tính năng: chữ + ảnh, xen kẽ trái phải */
 .features { padding-block: 72px 24px; display: flex; flex-direction: column; gap: 80px; }
@@ -114,6 +114,7 @@ footer a { color: var(--muted); }
   .hero .inner, .feature, .feature.flip, .plans { grid-template-columns: 1fr; }
   .feature.flip .text { order: 0; }
   .feature .device { max-width: 280px; justify-self: center; }
+  .feature .device img { width: 100%; }
   .grid4 { grid-template-columns: 1fr 1fr; }
   .steps, .summary { grid-template-columns: 1fr; }
   .hero .device img { height: 420px; }
