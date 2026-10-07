@@ -43,7 +43,7 @@ nav a[aria-current] { color: var(--accent); font-weight: 600; }
 .hero .device { border-bottom-left-radius: 0; border-bottom-right-radius: 0; padding-bottom: 0; }
 .hero .device img { border-bottom-left-radius: 0; border-bottom-right-radius: 0; width: 100%; height: 520px; object-fit: cover; object-position: top; }
 /* Đầu trang (07/10/2026): iPad phía sau, iPhone đè góc trái phía trước – thấy ngay app chạy cả 2 máy. */
-.hero .shot.duo { position: relative; width: min(560px, 92vw); height: 520px; justify-self: end; }
+.hero .shot.duo { position: relative; width: min(560px, 100%); height: 520px; }
 .hero .duo .hero-tablet { position: absolute; right: 0; bottom: 0; width: 88%; border-bottom-left-radius: 0; border-bottom-right-radius: 0; padding-bottom: 0; box-shadow: 0 30px 70px rgba(0, 20, 20, .45); }
 .hero .duo .hero-tablet img { border-bottom-left-radius: 0; border-bottom-right-radius: 0; height: 440px; object-fit: cover; object-position: top left; }
 .hero .duo .device { position: absolute; left: 0; bottom: 0; width: 42%; z-index: 1; }
@@ -158,7 +158,7 @@ footer a { color: var(--muted); }
   .grid4 { grid-template-columns: 1fr 1fr; }
   .steps, .summary { grid-template-columns: 1fr; }
   .hero .device img { height: 420px; }
-  .hero .shot.duo { height: 400px; justify-self: center; }
+  .hero .shot.duo { height: 400px; }
   .hero .duo .hero-tablet img { height: 330px; }
   .hero .duo .device img { height: 300px; }
 }
