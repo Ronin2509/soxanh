@@ -109,6 +109,8 @@ summary::after { content: "+"; color: var(--accent); font-size: 22px; line-heigh
 details[open] summary::after { content: "–"; }
 details .body { padding: 0 20px 18px; }
 details .body p { margin: 0 0 12px; }
+.faq-group { font-size: 15px; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); margin: 28px 0 10px; }
+details .body ul, details .body ol { margin: 0 0 12px; padding-left: 22px; display: grid; gap: 6px; }
 .faqshot { margin: 4px 0 0; max-width: 420px; }
 .faqshot img { border-radius: 14px; border: 1px solid var(--line); }
 .faqshot.phone { max-width: 260px; }
