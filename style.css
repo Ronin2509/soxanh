@@ -78,6 +78,19 @@ nav a[aria-current] { color: var(--accent); font-weight: 600; }
 .ipad-band .kicker { color: var(--accent); font-weight: 700; font-size: 14px; letter-spacing: .06em; text-transform: uppercase; margin: 0 0 8px; }
 .tablet { background: #0E1213; border-radius: 34px; padding: 14px; box-shadow: 0 30px 70px rgba(0, 40, 40, .35); max-width: 100%; }
 .tablet img { display: block; width: 100%; height: auto; border-radius: 22px; }
+.demo { display: grid; grid-template-columns: 1fr auto; gap: 48px; align-items: center; padding-block: 64px 0; }
+.demo h2 { font-size: clamp(26px, 4vw, 36px); line-height: 1.2; margin: 0 0 12px; text-wrap: balance; }
+.demo .kicker { color: var(--accent); font-weight: 700; font-size: 14px; letter-spacing: .06em; text-transform: uppercase; margin: 0 0 8px; }
+.demo ol { margin: 0; padding-left: 22px; display: grid; gap: 8px; color: var(--muted); }
+.demo .device { width: min(300px, 80vw); }
+.demo video { display: block; width: 100%; height: auto; aspect-ratio: 444 / 962; border-radius: 37px; background: #0E1213; }
+.player { position: relative; }
+.play { position: absolute; left: 50%; top: 50%; translate: -50% -50%; width: 84px; height: 84px; border: 0; border-radius: 50%; cursor: pointer;
+  background: rgba(0, 94, 98, .9); color: #fff; box-shadow: 0 10px 30px rgba(0, 40, 40, .35); display: grid; place-items: center; }
+.play svg { width: 40px; height: 40px; fill: currentColor; margin-left: 5px; }
+.play:hover { background: #00857F; scale: 1.05; }
+.play[hidden] { display: none; }
+.watch { display: inline-block; margin: 0 0 22px; color: var(--mint); font-weight: 600; }
 .example { display: inline-block; font-weight: 700; background: var(--tint); color: var(--accent); padding: 2px 10px; border-radius: 8px; }
 
 /* Dải riêng tư */
@@ -146,6 +159,7 @@ footer a { color: var(--muted); }
   .feature.flip .text { order: 0; }
   .feature .device { max-width: 280px; justify-self: center; }
   .ipad-band { grid-template-columns: 1fr; gap: 20px; }
+  .demo { grid-template-columns: 1fr; gap: 24px; justify-items: center; padding-block: 48px 0; }
   .tablet { border-radius: 22px; padding: 8px; }
   .tablet img { border-radius: 14px; }
   .feature.pair, .feature.pair.flip { grid-template-columns: 1fr; }
