@@ -33,8 +33,12 @@ nav a[aria-current] { color: var(--accent); font-weight: 600; }
 .badges { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 26px; padding: 0; list-style: none; }
 .badges li { display: flex; align-items: center; gap: 6px; background: rgba(255,255,255,.13); border-radius: 999px; padding: 6px 12px; font-size: 14px; font-weight: 600; }
 .badges .i { width: 16px; height: 16px; }
-.soon { display: inline-flex; align-items: center; gap: 10px; background: #fff; color: #00474A; border-radius: 14px; padding: 10px 16px; font-weight: 700; margin-bottom: 56px; }
+.soon { text-decoration: none; transition: transform .15s; display: inline-flex; align-items: center; gap: 10px; background: #fff; color: #00474A; border-radius: 14px; padding: 10px 16px; font-weight: 700; margin-bottom: 56px; }
 .soon small { display: block; font-weight: 500; font-size: 12px; color: #55666A; }
+.soon:hover { transform: translateY(-2px); }
+.soon .go { margin-left: 6px; font-size: 20px; color: #00857F; }
+.get { text-align: center; margin-top: 28px; }
+.get .soon { margin-bottom: 0; text-align: left; box-shadow: 0 0 0 1.5px var(--line); }
 .hero .shot { align-self: end; justify-self: center; width: min(330px, 80vw); margin-inline: auto; }
 
 /* Khung iPhone cho ảnh app */
